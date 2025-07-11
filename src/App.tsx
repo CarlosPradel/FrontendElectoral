@@ -7,6 +7,9 @@ import ConsultaPublica from "./pages/ConsultaPublica";
 import UnauthorizedPage from "./pages/UnauthorizedPage";
 import PrivateRoute from "./routes/PrivateRoute";
 import DashboardPartidos from "./pages/DashboardPartidos";
+import DashboardSecciones from "./pages/DashboardSecciones";
+import DashboardCargos from "./pages/DashboardCargos";
+import DashboardRecintosElectoral from "./pages/DashboardRecintosElectoral";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/consulta" element={<ConsultaPublica />} />
       <Route path="/partido" element={<DashboardPartidos />} />
+      <Route path="/secciones" element={<DashboardSecciones />} />
+      <Route path="/cargo" element={<DashboardCargos />} />
+      <Route path="/admin/recintos" element={<DashboardRecintosElectoral />} />
 
       
       <Route path="/unauthorized" element={<UnauthorizedPage />} />

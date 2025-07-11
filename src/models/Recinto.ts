@@ -1,6 +1,6 @@
 // models/Recinto.ts
 export interface Recinto {
-  id?: number;
+  id: number;
   nombre: string;
   direccion: string;
   coordenadas: string;

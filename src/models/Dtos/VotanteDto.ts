@@ -8,5 +8,5 @@ export interface Votante {
 export interface CreateVotante {
   nombreCompleto: string;
   apellidoPaterno: string;
-  recintoId: number; // usado para lógica de distribución automática en el backend
+  recintoId: number; 
 }

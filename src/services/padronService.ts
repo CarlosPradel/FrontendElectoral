@@ -8,7 +8,6 @@ export const getVotantes = (token: string) =>
     headers: { Authorization: `Bearer ${token}` },
   });
 
-// Crear nuevo votante
 export const crearVotante = (data: FormData, token: string) =>
   axios.post(`${API_URL}/votantes/`, data, {
     headers: {
@@ -22,7 +21,6 @@ export const crearVotante = (data: FormData, token: string) =>
     headers: { Authorization: `Bearer ${token}` },
   });
 
-// Crear nuevo recinto
 export const crearRecinto = (data: FormData, token: string) =>
   axios.post(`${API_URL}/recintos/`, data, {
     headers: {
@@ -31,7 +29,6 @@ export const crearRecinto = (data: FormData, token: string) =>
     },
   });
 
-// Actualizar recinto
 export const actualizarRecinto = (
   id: number,
   data: FormData,
@@ -44,7 +41,6 @@ export const actualizarRecinto = (
     },
   });
 
-// Eliminar recinto
 export const eliminarRecinto = (id: number, token: string) =>
   axios.delete(`${API_URL}/recintos/${id}/`, {
     headers: { Authorization: `Bearer ${token}` },

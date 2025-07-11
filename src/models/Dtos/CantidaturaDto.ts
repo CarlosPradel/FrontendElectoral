@@ -1,4 +1,4 @@
-export interface Candidatura {
+export interface CandidaturaDto  {
   id: number;
   nombreCandidato: string;
   nombreCargo: string;

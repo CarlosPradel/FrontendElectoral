@@ -10,6 +10,10 @@ import DashboardPartidos from "./pages/DashboardPartidos";
 import DashboardSecciones from "./pages/DashboardSecciones";
 import DashboardCargos from "./pages/DashboardCargos";
 import DashboardRecintosElectoral from "./pages/DashboardRecintosElectoral";
+import DashboardElecciones from "./pages/DashboardElecciones";
+import DashboardMesaElectoral from "./pages/DashboardMesaElectoral";
+import DashboardJurados from "./pages/DashboardJurados";
+import DashboardVotantes from "./pages/DashboardVotantes";
 
 function App() {
   return (
@@ -20,8 +24,11 @@ function App() {
       <Route path="/secciones" element={<DashboardSecciones />} />
       <Route path="/cargo" element={<DashboardCargos />} />
       <Route path="/admin/recintos" element={<DashboardRecintosElectoral />} />
+      <Route path="/eleccion" element={< DashboardElecciones />} />
+      <Route path="/mesa-electoral" element={< DashboardMesaElectoral />} />
+      <Route path="/jurado" element={< DashboardJurados />} />
+      <Route path="/votante" element={< DashboardVotantes />} />
 
-      
       <Route path="/unauthorized" element={<UnauthorizedPage />} />
 
       <Route

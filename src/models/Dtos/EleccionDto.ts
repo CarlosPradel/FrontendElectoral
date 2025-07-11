@@ -1,10 +1,10 @@
 export interface Eleccion {
   id: number;
   tipo: string;
-  fecha: string; // o Date si se parsea como objeto
+  fecha: string; 
 }
 
 export interface CreateEleccion {
   tipo: string;
-  fecha: string; // igual que arriba
+  fecha: string;
 }

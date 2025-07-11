@@ -14,12 +14,14 @@ import DashboardElecciones from "./pages/DashboardElecciones";
 import DashboardMesaElectoral from "./pages/DashboardMesaElectoral";
 import DashboardJurados from "./pages/DashboardJurados";
 import DashboardVotantes from "./pages/DashboardVotantes";
+import DashboardCandidaturas from "./pages/DashboardCandidaturas";
 
 function App() {
   return (
     <Routes>
       <Route path="/login" element={<LoginPage />} />
       <Route path="/consulta" element={<ConsultaPublica />} />
+      {/* rutas sistema administracion publicas */}
       <Route path="/partido" element={<DashboardPartidos />} />
       <Route path="/secciones" element={<DashboardSecciones />} />
       <Route path="/cargo" element={<DashboardCargos />} />
@@ -28,6 +30,7 @@ function App() {
       <Route path="/mesa-electoral" element={< DashboardMesaElectoral />} />
       <Route path="/jurado" element={< DashboardJurados />} />
       <Route path="/votante" element={< DashboardVotantes />} />
+      <Route path="/candidatura" element={< DashboardCandidaturas />} />
 
       <Route path="/unauthorized" element={<UnauthorizedPage />} />
 
